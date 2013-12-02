@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Description</title>
+	<style>
+		div.banner	{width:285px; height: 155px; background-color:#50750c; margin-top:120px; margin-left: 200px; margin-right: auto;
+						text-align: center; color: white; font-size: 85px; font-family: Calibri; line-height: 55px }
+		div.body	{width:900px; height:1700px; margin-left:auto; margin-right: auto; text-indent: 50px; font-size:13pt;}
+		div.navbanner {width:auto; height:45px; background-color:#283a06; margin-left:625px; margin-right: auto;
+						line-height: 30px; font-size: 17px; color="white"}
+		div.membnavban {width:auto; height:45px; background-color:#464747; margin-left:470px; margin-right: auto;
+						line-height: 30px; font-size: 17px; color:#a0f0a7}
+		
+		a.homebanner:link, a.homebanner:visited {display:block; color:#FFFFFF; font-family: Calibri; background-color:#283a06; width:auto; height: 30px; text-align:center; padding:4px;}
+		a.membbanner:link, a.membbanner:visited {display:block; color:#a0f0a7; font-family: Calibri; background-color:#464747; width:auto; height: 30px; text-align:center; padding:4px;}
+		a.homebanner:hover, a.homebanner:active{background-color:#464747; color:#a0f0a7;}
+		a.membbanner:hover, a.membbanner:active{background-color:#283a06; color:#ffffff;}
+		a.exlinks:link, a.exlinks:visited {color:#ffffff; font-family: Calibri; font-size: 30px;} 
+		a.oursites:link, a.oursites:visited{color:#50750c; font-family: Calibri; font-size:12px;}
+	</style>
+
+<body>
+	<body background="background.png"> 
+	<div class = "banner"><br>GReEN</div>
+	<div class = "navbanner">
+		<table>
+			<tr>
+				<td><a class="homebanner" href="index.html">Home</a></td>
+				<td><a class="homebanner" href="project-description.html">Project Description</a></td>
+				<td><a class="homebanner" href="prototype.html">Prototypes</a></td>
+				<td><a class="homebanner" href="SRS.html">SRS</a></td>
+				<td><a class="homebanner" href="resources.html">Resources</a></td>
+				<td><a class="homebanner" href="login.html">Login</a></td>
+			</tr>
+		</table>
+	</div>
+	<div class = "membnavban">
+		<table rules=none>
+			<tr>
+			<td><center><font color=#a0f0a7 face=calibri size=4>Member Navigation</font></center><td>
+			<td><a class="membbanner" href="minutes.html">Meeting Minutes</a></td>
+			<td><a class="membbanner" href="docs.html">Documents</a></td>
+			<td><a class="membbanner" href="all-prototypes.html">Prototypes</a></td>
+			<td><a class="membbanner" href="forum.html">Forum</a></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class = "body">
+
+		<br><br><br>
+
+		<table width="260" height="56" align=center bgcolor=#50750c>
+			<tr><td><center><font color="white" face=calibri size=6>Meeting Minutes</font></center></td></tr>
+		</table>
+
+		<table bgcolor=#464747 bordercolor=#e3e3e3 border="7px" align=center rules=none>
+			<tr height="10"><td></td></tr>
+			<tr><td width="100"></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting1.pdf">Meeting 1</a></td><td width="100"></td></tr>
+			<tr><td></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting2.pdf">Meeting 2</a></td></tr>
+			<tr><td></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting3.pdf">Meeting 3</a></td></tr>
+			<tr><td></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting4.pdf">Meeting 4</a></td></tr>
+			<tr><td></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting5.pdf">Meeting 5</a></td></tr>
+			<tr><td></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting6.pdf">Meeting 6</a></td></tr>
+			<tr><td></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting7.pdf">Meeting 7</a></td></tr>
+			<tr><td></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting8.pdf">Meeting 8</a></td></tr>
+			<tr><td></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting9.pdf">Meeting 9</a></td></tr>
+			<tr><td></td><td><a class="exlinks" href="https://www.cse.msu.edu/~cse435/Projects/F2013/Groups/APCA2/Meetings/435TeamMeeting10.pdf">Meeting 9</a></td></tr>
+			<tr height="10"><td></td></tr>
+		</table>
+	</div>
+
+</body>
+</html>
