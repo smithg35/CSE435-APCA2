@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript" src="compute.js"></script>
+	
+</head>
+
+		<center>
+		<h1>APCA System Simulator Prototype</h1>
+		<h2>by GReEN Team</h2>
+		<br>
+		<a href=""></a>
+		<br><br>
+		<div style="text-align:left">
+		To simulate the APCA System, click the "Compute" button next to one of the scenarios in the tables below, and then click the "Run" button
+		near the bottom of the page.  If you want to activate the fail safe mode, make sure you have the checkbox checked before you click "Run".
+		  You must reset the simulator before running a new scenario.<br><br>
+		  
+		There are 3 types of scenarios based on the pedestrian's movement that you can simulate, and each of them are in their own table.  The 
+		first type "Moving then stopped" has the pedestrian moving when the simulation starts, and stopping at the end position, Yf.
+		  The second type of scenario is "Static then moving".  In these scenarios, the pedestrian will be standing still until the specified
+		   delay time has passed.  After that specified time has passed, the pedestrian will walk forward across the street.  The final type of
+		scenario, "Static", has the pedestrian standing at it's initial position, Yi, for the entirety of the simulation.<br><br>
+		
+		  
+		Once the user has clicked the "Run" button, the scenario will be run through the simulator.  A timer in the upper-right corner will keep
+		track of how much time has past since the simulation began.  If the pedestrian makes the vehicle come to a complete stop, a message will be
+		 displayed to show it is a "throw away scenario".  If the scenario is successful, the time lost will be displayed.<br><br>
+		The vehicle with be depicted by this orange rectangle. <img src="car.png"><br>
+		<br>
+		The pedestrian will be depicted by this blue circle. <img src="pedestrian.png"><br>
+		<br>
+		Vehicle's Initial Speed : 50 (kph)<br>
+		Vehicle Width : 2 (m)<br>
+		Pedestrian Initial Position : 35 (m)<br>
+		Maximum Deceleration : 0.7 g (6.87 m/s^s)
+		</div>
+		<br>
+		<br>
+		<br>
+
+		<table class="moving_then_stopped" style="width: 700px;" border="1">
+		<tbody>
+			<tr>
+				<td colspan="6"><b>Moving then stopped</b></td>
+			</tr>
+			<tr>
+				<td><b>Scenario #</b></td>
+				<td><b>Initial Position, Yi</b></td>
+				<td><b>End Position, Yf</b></td>
+				<td><b>Initial Speed</b></td>
+				<td><b>Final Speed</b></td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td>(m)</td>
+				<td>(m)</td>
+				<td>(kph)</td>
+				<td>(kph)</td>
+				<td></td>
+			</tr>
+				<td>Scenario 1</td>
+				<td id="1_1">-7</td>
+				<td id="1_2">0</td>
+				<td id="1_3">10</td>
+				<td id="1_4">0</td>
+				<td><button type="button" onclick="compute_scenario('1')">Compute</button></td>
+			</tr>
+			<tr>
+				<td>Scenario 2</td>
+				<td id="2_1">-7</td>
+				<td id="2_2">-2</td>
+				<td id="2_3">10</td>
+				<td id="2_4">0</td>
+				<td><button type="button" onclick="compute_scenario('2')">Compute</button></td>
+			</tr>
+			<tr>
+				<td>Scenario 3</td>
+				<td id="3_1">-7</td>
+				<td id="3_2">-3</td>
+				<td id="3_3">10</td>
+				<td id="3_4">0</td>
+				<td><button type="button" onclick="compute_scenario('3')">Compute</button></td>
+			</tr>
+			<tr>
+				<td>Scenario 4</td>
+				<td id="4_1">-7</td>
+				<td id="4_2">-5</td>
+				<td id="4_3">10</td>
+				<td id="4_4">0</td>
+				<td><button type="button" onclick="compute_scenario('4')">Compute</button></td>
+			</tr>
+		</tbody>
+	</table>
+	
+</br>
+	<table id="static_then_moving" style="width: 700px;" border="1">
+		<tbody>
+			<tr>
+				<td colspan="6"><b>Static then moving</b></td>
+			</tr>
+			<tr>
+				<td><b>Scenario #</b></td>
+				<td><b>Initial Position, Yi</b></td>
+				<td><b>Delay before moving</b></td>
+				<td><b>Initial Speed</b></td>
+				<td><b>Final Speed</b></td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td>(m)</td>
+				<td>(s)</td>
+				<td>(kph)</td>
+				<td>(kph)</td>
+				<td></td>
+			</tr>
+				<td>Scenario 5</td>
+				<td id="5_1">0</td>
+				<td id="5_2">1.5</td>
+				<td id="5_3">0</td>
+				<td id="5_4">10</td>
+				<td><button type="button" onclick="compute_scenario('5')">Compute</button></td>
+			</tr>
+			<tr>
+				<td>Scenario 6</td>
+				<td id="6_1">-2</td>
+				<td id="6_2">1.8</td>
+				<td id="6_3">0</td>
+				<td id="6_4">10</td>
+				<td><button type="button" onclick="compute_scenario('6')">Compute</button></td>
+			</tr>
+			<tr>
+				<td>Scenario 7</td>
+				<td id="7_1">-4</td>
+				<td id="7_2">1.1</td>
+				<td id="7_3">0</td>
+				<td id="7_4">10</td>
+				<td><button type="button" onclick="compute_scenario('7')">Compute</button></td>
+			</tr>
+		</tbody>
+	</table>
+	
+</br>
+
+			<table id="static" style="width: 700px;" border="1">
+			<tbody>
+			<tr>
+				<td colspan="6"><b>Static</b></td>
+			</tr>
+			<tr>
+				<td><b>Scenario #</b></td>
+				<td><b>Initial Position, Yi</b></td>
+				<td><b>Delay before moving</b></td>
+				<td><b>Initial Speed</b></td>
+				<td><b>Final Speed</b></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>(m)</td>
+				<td>(s)</td>
+				<td>(kph)</td>
+				<td>(kph)</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Scenario 8</td>
+				<td id="8_1">0</td>
+				<td id="8_2">N/A</td>
+				<td id="8_3">0</td>
+				<td id="8_4">0</td>
+				<td><button type="button" onclick="compute_scenario('8')">Compute</button></td>
+			</tr>
+			<tr>
+				<td>Scenario 9</td>
+				<td>-2</td>
+				<td>N/A</td>
+				<td>0</td>
+				<td>0</td>
+				<td><button type="button" onclick="compute_scenario('9')">Compute</button></td>
+			</tr>
+			<tr>
+				<td>Scenario 10</td>
+				<td>-4</td>
+				<td>N/A</td>
+				<td>0</td>
+				<td>0</td>
+				<td><button type="button" onclick="compute_scenario('10')">Compute</button></td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<br><br>
+	<span style="margin-left: -670px;"><input type="checkbox" id="failsafe">Activate fail safe (before computing)<br></span>
+	
+	<div style="margin-left:-900px;">
+	<canvas id="canvasBackground" width="900" height="250" style="position: absolute; z-index: 1; border:1px solid #000000;">></canvas>
+	<canvas id="myCanvas" width="900" height="250" style="position: absolute; z-index: 1; border:1px solid #000000;"></canvas>
+	</div>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<button type="button" onclick="run_scenario()">Run</button><br>
+<button type="button" onclick="location.reload()">Reset</button>
+
+</center>
